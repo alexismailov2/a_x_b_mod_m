@@ -4,12 +4,15 @@ project(oismailov_math_test LANGUAGES C)
 add_executable(${PROJECT_NAME}
         main.c)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 target_include_directories(${PROJECT_NAME}
         PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}/../include)
 
 target_link_libraries(${PROJECT_NAME}
         PRIVATE
+        -L${CMAKE_INSTALL_PREFIX}/install
         oismailov_math)
 
 install(TARGETS oismailov_math_test EXPORT ${DMAS_PROJECT}

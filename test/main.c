@@ -1,4 +1,4 @@
-#include <oismailov/a_x_b_mod_m.hpp>
+#include <oismailov/a_x_b_mod_m.h>
 
 #include <stdio.h>
 #include <malloc.h>

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdint.h>
+//#include <stdint.h>
 #include <stdlib.h>
 #include <cuda.h>
 #include <gmp.h>
